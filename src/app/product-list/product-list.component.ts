@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../product.service';
-import {Product} from "../Product";
+
+import { Product } from '../Product';
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
@@ -11,16 +12,20 @@ export class ProductListComponent implements OnInit {
   products: Product[];
 
   constructor(
-    private productService: ProductService) {
+    private productService: ProductService
+  ) { 
     console.log('constructor')
-   }
+  }
 
   ngOnInit(): void {
     this.getProducts();
   }
-
+ 
   getProducts(){
-    this.products = this.productService.getProducts();
+   this.productService.getProducts().subscribe(data => {
+     console.log(data);
+     this.products = data;
+    });
   }
   removeItem(id){
     this.products = this.productService.removeProduct(id);
@@ -28,21 +33,21 @@ export class ProductListComponent implements OnInit {
   }
 
 
-  
   // changeStatus(){
-  //   // this.product.status= !this.product.status
+  //   // this.product.status = !this.product.status;
   // }
   // changeName(e){
-  //   // this.product.name= e.target.value
+  //   // this.product.name = e.target.value;
   // }
   // removeItem(id){
   //   this.products = this.products.filter(product => product.id != id);
   // }
 
-
-  showDetail(product){
-    console.log(product);
-    this.selected = product;
-  }
-
+  // showDetail(product){
+  //   console.log(product);
+  //   this.selected = product;
+  // }
+  // Edit(product){
+    
+  // }
 }
