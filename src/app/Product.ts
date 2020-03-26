@@ -1,8 +1,8 @@
 export class Product{
     id: number;
-    name: String;
-    desc: String;
-    status: boolean;
+    name: string;
     price: number;
-    img: String;
+    desc: string;
+    status: boolean;
+    img: string;
 }
