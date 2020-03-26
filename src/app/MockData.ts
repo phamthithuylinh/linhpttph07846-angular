@@ -3,7 +3,7 @@ import { Product } from './Product';
 export const data : Product[] = [
     {
       id: 1,
-      name: "Cherry",
+      name: "mango",
       price: 24.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
       status: false,
@@ -11,7 +11,7 @@ export const data : Product[] = [
     },
     {
       id: 2,
-      name: "Dâu Tây",
+      name: "kiwi",
       price: 24.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
       status: false,
@@ -19,7 +19,7 @@ export const data : Product[] = [
     },
     {
       id: 3,
-      name: "Sầu Riêng",
+      name: "keo",
       price: 24.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
       status: false,
@@ -27,7 +27,7 @@ export const data : Product[] = [
     },
     {
       id: 4,
-      name: "Kiwi",
+      name: "oi",
       price: 24.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
       status: false,
@@ -43,7 +43,7 @@ export const data : Product[] = [
     },
      {
       id: 6,
-      name: "Nho Đen",
+      name: "Nho",
       price: 24.99,
       desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
       status: false,
