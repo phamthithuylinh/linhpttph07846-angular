@@ -21,6 +21,7 @@
           <button class="btn btn-primary" (click)="showDetail(product)">Detail</button>
           <button class="btn btn-primary" (click)="Edit(product)">Edit</button> -->
           <button class="btn btn-primary" routerLink="/product/{{product.id}}">Chi tiết</button>
+          <button (click)="removeItem(product.id)">Delete</button>
           <!-- <input type="text" name="" id="" (keyup)="changeName($event)" class="form-control mt-3"> -->
 
           <!-- <input type="text" name="" id="" [(ngModel)]="product.name" class="form-control mt-3"> -->
